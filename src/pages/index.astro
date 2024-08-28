@@ -1,4 +1,5 @@
 ---
+import Celu from '../components/celu.astro';
 import Page3 from '../components/page3.astro';
 import Page2 from '../components/page2.astro';
 import Page1 from '../components/page1.astro';
@@ -8,9 +9,14 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Tomas Lotito, agente inmobiliario .">
 
 
-	<main class="relative w-full h-screen">
-	<Page1 />
-	<Page2 />
-	<Page3 />
+	<main>
+	 <div class="w-full h-screen hidden lg:block">
+	  <Page1 />
+	  <Page2 />
+	  <Page3 />
+	 </div>
+	 <div class="w-full h-screen lg:hidden">
+	 <Celu />
+	 </div>
 	</main>
 </Layout>

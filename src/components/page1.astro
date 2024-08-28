@@ -1,42 +1,54 @@
-<body class="relative h-4/5" >
-    <head class="flex items-center w-full top-0">
-        <nav class="absolute z-10 flex justify-between w-full">
-            <div class="justify-start flex-grow basis-0">
-                <img src="remax-loogo.png" alt="remax logo"
-                class="h-28 min-w-[294.25px] hidden lg:block">
-                </img>
-                <img src="remax-loguito.png" alt="rmxloguito"
-                class="lg:hidden min-h-[125px] min-w-[158px]">
-            </div>
-                
-            <ul class="
-            justify-center flex flex-grow
-            text-white text-lg [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2
-            ">
-                <li><a href="#page2link">Plan de marketing</a></li>
-                <li><a href="#">Propiedades</a></li>
-                <li><a href="#page3link">Programar una cita</a></li> 
-            </ul>   
+<section class="w-full h-4/5">
+<header class="flex">
+    <nav class="absolute z-10 flex justify-between w-full">
+        <div class="justify-start flex-grow basis-0">
+            <img
+                src="remax-loogo.png"
+                alt="remax logo"
+                class="h-28 min-w-[294.25px]"
+            />
+        </div>
+   
+         <ul
+          class="justify-center hidden lg:flex flex-grow
+             text-white text-lg [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+         >
+             <li><a href="#page2link">Plan de marketing</a></li>
+             <li><a href="#">Propiedades</a></li>
+             <li><a href="#page3link">Programar una cita</a></li>
+         </ul>
 
-            <ul class="
-            justify-end flex flex-grow basis-0
-            text-white text-lg [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2
-            ">
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">I</a></li>
-                <li><a href="#">F</a></li>
-            </ul>
-        </nav>
-    </head>
 
-    <div class="absolute inset-0 h-4/5 w-full -z-30 bg-stone-800">
-        <video class="w-full  h-4/5 object-cover hidden lg:block opacity-30 fixed" autoplay muted loop>
-            <source src="/videos/video-1.mp4" type="video/mp4" />
-        </video>
-    </div>
-    <div class="relative flex items-center justify-center h-4/5">
-        <h1 class="text-white lg:text-5xl font-bold px-10 text-2xl">
-            ¡Mudate a la vida que querés!
-        </h1>
-    </div>
-</body>
+         <ul
+             class="justify-end hidden lg:flex flex-grow basis-0
+                 text-white text-lg [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+         >
+             <li><a href="#">Contacto</a></li>
+             <li><a href="#">I</a></li>
+             <li><a href="#">F</a></li>
+         </ul>
+    </nav>
+
+   
+
+    
+
+    
+</header>
+
+<div class="absolute inset-0 w-full -z-30 bg-stone-800">
+    <video
+        class="w-full h-4/5 object-cover hidden lg:block opacity-30 fixed"
+        autoplay
+        muted
+        loop
+    >
+        <source src="/videos/video-1.mp4" type="video/mp4" />
+    </video>
+</div>
+<div class="flex items-center justify-center h-full">
+    <h1 class="text-white lg:text-5xl font-bold px-10 text-2xl">
+        ¡Mudate a la vida que querés!
+    </h1>
+</div>
+</section>
