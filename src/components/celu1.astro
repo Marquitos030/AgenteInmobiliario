@@ -7,11 +7,16 @@
         class="min-h-[125px] min-w-[158px] max-w-[158px]"
         />
         </div>
-        <div class="flex flex-col items-center justify-center px-10">
-            <label for="toggle-menu" class="menu-button border-2 border-white hover:bg-white hover:text-black text-white px-4 py-2 rounded-md cursor-pointer">
+        <div class="flex flex-col items-center justify-center px-5">
+            <label for="toggle-menu" id="menu-button" class="border-2 border-white hover:bg-white hover:text-black text-white px-4 py-2 rounded-md cursor-pointer ">
                 Menú
             </label>
             <input type="checkbox" id="toggle-menu" class="hidden">
+
+            <label for="toggle-x" id="x-button" class="border-2 hidden border-white text-white hover:bg-white hover:text-black px-2 cursor-pointer place-self-end">
+                x
+            </label>
+            <input type="checkbox" id="toggle-x" class="hidden">
         
             <ul id="menu-list" class="hidden mt-4 ml-4 space-y-2">
                 <li><a href="#" class="text-white hover:text-blue-500">Plan de marketing</a></li>
@@ -23,10 +28,20 @@
             <script>
                 const toggleMenu = document.getElementById('toggle-menu');
                 const menuList = document.getElementById('menu-list');
+                const menuButton = document.getElementById('menu-button')
+                const toggleX = document.getElementById('toggle-x');
+                const xButton = document.getElementById('x-button')
         
                 toggleMenu.addEventListener('change', () => {
                     menuList.classList.toggle('hidden');
+                    menuButton.classList.toggle('hidden');
+                    xButton.classList.toggle('hidden')
                 });
+                toggleX.addEventListener('change', () => {
+                   menuList.classList.toggle('hidden');
+                   menuButton.classList.toggle('hidden');
+                   xButton.classList.toggle('hidden')
+               });
             </script>
         </div>
     </header>
